@@ -1,0 +1,151 @@
+/**
+ * @name P5R
+ * @author ennesis
+ * @version 1.0
+ * @description A brief description of your theme.
+*/
+
+@font-face {
+    font-family: "shoplifter";
+    src: url("./shoplifter.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "ransom";
+    src: url("./Persona5FanRansom.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "optima";
+    src: url("./optimanova.ttf");
+    font-weight: 200;
+}
+
+:root {
+    --p5-black: #000;
+    --p5-white: #fff;
+    --p5-red: #f00;
+}
+
+body *, ::placeholder {
+    font-family: "optima" !important;
+}
+
+.stack_dbd263 {
+    background-color: var(--p5-red);
+}
+
+.headerText_c19a55 > .username_c19a55 {
+    font-family: "shoplifter" !important;
+    font-size: 1.5rem;
+    color: #fff;
+}
+/*
+.messageListItem__5126c {
+    background-image: url("./Chat.png");
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+    background-size: 120% 100%;
+    background-position-x: 15%;
+}
+*/
+
+.backgroundFlash__5126c .message__5126c {
+    padding-bottom: 1%;
+}
+
+.backgroundFlash__5126c.groupStart__5126c {
+    margin-top: 2%;
+}
+
+.message__5126c.groupStart__5126c, .backgroundFlash__5126c.groupStart__5126c .message__5126c  {
+    margin-top: 10% !important;
+}
+
+.messageListItem__5126c[data-is-self="false"] {
+    left: 5%;
+    padding: 0.5% 0%;
+
+    .messageContent_c19a55 {
+        text-align: left;
+        width: 50%;
+        background: #000;
+        padding: 2%;
+        border: 2px #fff solid;
+        top: 15px;
+        transform: rotate(3deg);
+    }
+    .avatar_c19a55 {
+        top: -20px;
+        left: -2%;
+        width: 46px;
+        height: 46px;
+        box-sizing: border-box;
+        border-radius: 0;
+        border: 2px #fff solid;
+        background: #000;
+        margin: 0;
+        transform: skew(5deg) rotate(-5deg);
+        transition: 0.1s;
+    }
+    .avatar_c19a55:hover {
+        transform: skew(0deg) rotate(0deg);
+    }
+    .avatarDecoration_c19a55 {
+        top: -26px;
+        left: -3.5%;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.messageListItem__5126c[data-is-self="true"] {
+    right: -48%;
+    padding: 0.5% 0%;
+
+    .messageContent_c19a55 {
+        text-align: left;
+        width: 50%;
+        background: #000;
+        padding: 2%;
+        border: 2px #fff solid;
+        top: 15px;
+        transform: rotate(-3deg);
+    }
+    .avatar_c19a55 {
+        top: -20px;
+        left: 42%;
+        width: 46px;
+        height: 46px;
+        box-sizing: border-box;
+        border-radius: 0;
+        border: 2px #fff solid;
+        background: #000;
+        margin: 0;
+        transform: skew(-5deg) rotate(5deg);
+        transition: 0.1s;
+    }
+    .avatar_c19a55:hover {
+        transform: skew(0deg) rotate(0deg);
+    }
+    .avatarDecoration_c19a55 {
+        top: -26px;
+        left: 41.5%;
+        width: 64px;
+        height: 64px;
+    }
+}
+/*
+.messageListItem__5126c > div > div > div {
+    text-align: left;
+    width: 50%;
+    background: #000;
+    padding: 10px 53px 10px 0px;
+    border: 2px #fff solid;
+    top: 15px;
+    transform: rotate(3deg);
+}
+*/
+
